@@ -654,7 +654,7 @@ namespace ROV
 
 		private float GetAttitudeData(byte[] body, int index)
 		{
-			float signedData = 0f;
+			//float signedData = 0f;
 			int temp_value1 = 0;
 			int temp_value2 = 0;
 			int temp_value3 = 0;
@@ -1089,7 +1089,7 @@ namespace ROV
 			//capture.Set(CaptureProperty.FrameHeight, 480);//高度
 			Mat image = new Mat();
 			Mat corrected_image = new Mat();
-			int i = 0;
+			//int i = 0;
 			try
 			{
 
