@@ -1,0 +1,2 @@
+Remove Pin=U?-1 From Net=CAN1_TX
+Remove Pin=U?-4 From Net=CAN1_RX

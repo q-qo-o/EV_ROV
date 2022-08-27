@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=5V_D Pin=P6-1
+Removed Pin From Net: NetName=PWM3 Pin=P6-2
+Removed Pin From Net: NetName=5V_D Pin=P9-1
+Removed Pin From Net: NetName=PWM4 Pin=P9-2
+Added Pin To Net: NetName=PWM3 Pin=P6-1
+Added Pin To Net: NetName=5V_D Pin=P6-2
+Added Pin To Net: NetName=PWM4 Pin=P9-1
+Added Pin To Net: NetName=5V_D Pin=P9-2
+Added Room: Name=中国机器人底板V1.0

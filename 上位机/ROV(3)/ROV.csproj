@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props" Condition="Exists('packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{5A75C6DE-2BC9-4408-8CB1-D477C14C7B82}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <LangVersion>8.0</LangVersion>
+    <AssemblyName>ROV</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Blob, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.Blob.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.UserInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.UserInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SmileWei.EmbeddedApp">
+      <HintPath>C:\Users\qdsyq\Desktop\new_rov\SmileWei.EmbeddedApp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationIcon Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ROV.AvionicsInstrumentsControls\AvionicsInstrumentsControlsRessources.cs" />
+    <Compile Include="ROV.Properties\Resources.cs" />
+    <Compile Include="ROV.Properties\Settings.cs" />
+    <Compile Include="ROV\AirSpeedIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\AltimeterInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\AttitudeIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\Constant.cs" />
+    <Compile Include="ROV\frm_DebugMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROV\frm_MainRov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROV\HeadingIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\InstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\InstrumentControlMarkPoint.cs" />
+    <Compile Include="ROV\InstrumentControlMarksDefinition.cs" />
+    <Compile Include="ROV\InstumentMarkScaleStyle.cs" />
+    <Compile Include="ROV\JosystickSend.cs" />
+    <Compile Include="ROV\Joystick.cs" />
+    <Compile Include="ROV\JoystickAPI.cs" />
+    <Compile Include="ROV\JoystickButtons.cs" />
+    <Compile Include="ROV\JoystickEventArgs.cs" />
+    <Compile Include="ROV\JoystickHandle.cs" />
+    <Compile Include="ROV\Program.cs" />
+    <Compile Include="ROV\SendPidParameterInfo.cs" />
+    <Compile Include="ROV\TurnCoordinatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\VerticalProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\VerticalSpeedIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ROV.AvionicsInstrumentsControls.AvionicsInstrumentsControlsRessources.resx" />
+    <EmbeddedResource Include="ROV\frm_MainRov.resx">
+      <DependentUpon>frm_MainRov.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props'))" />
+  </Target>
+</Project>

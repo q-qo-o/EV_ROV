@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=PWM_M6 Pin=PWM-3
+Removed Pin From Net: NetName=PWM_M5 Pin=PWM-4
+Removed Pin From Net: NetName=GND Pin=PWM-5
+Change Component Designator: OldDesignator=CAN NewDesignator=CAN1
+Change Component Designator: OldDesignator=PWM NewDesignator=CAN3
+Change Component Designator: OldDesignator=RT NewDesignator=P1
+Change Component Designator: OldDesignator=SW NewDesignator=P2
+Change Component Designator: OldDesignator=VDD_5 NewDesignator=D4
+Change Component Designator: OldDesignator=xp NewDesignator=D1
+Added Pin To Net: NetName=GND Pin=CAN3-3
+Added Pin To Net: NetName=GND Pin=CAN3-4
+Added Pin To Net: NetName=PWM_M6 Pin=CAN3-5
+Added Pin To Net: NetName=PWM_M5 Pin=CAN3-6
+Added Room: Name=‘≠¿ÌÕº1

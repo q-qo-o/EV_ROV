@@ -1,0 +1,320 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Move Component(s) Origin to Grid</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD2018\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Move Component(s) Origin to Grid</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2019/1/22</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">21:05:35</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc" class="file"><acronym title="F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc">F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc</acronym></a></td>
+</tr>
+</table><a name="IDJYNTUWO0SFFHFBYNYYNP2QXY5PX2NZ5JMY0PTTJ5CD3V2QAW0LAI"><h2>Components Origin</h2></a><a name="IDW2GYBUPXCBGEPEGOPTLBF0YDUEKO1Y5UU2GRSVIV1O1TBWS0NYRM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning"></th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8098.302mil|Location2.X=8323.799mil|Location1.Y=1066.616mil|Location2.Y=1622.998mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8098.302mil|Location2.X=8323.799mil|Location1.Y=1066.616mil|Location2.Y=1622.998mil|Absolute=True">SMT SIP Component P6-Header 4 (8196.834mil,1342.517mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7926.362mil|Location2.X=8046.767mil|Location1.Y=1213.777mil|Location2.Y=1621.195mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7926.362mil|Location2.X=8046.767mil|Location1.Y=1213.777mil|Location2.Y=1621.195mil|Absolute=True">Small Component P5-Header 3 (7980.299mil,1267.714mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6774.61mil|Location2.X=7000.106mil|Location1.Y=2552.122mil|Location2.Y=3008.185mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6774.61mil|Location2.X=7000.106mil|Location1.Y=2552.122mil|Location2.Y=3008.185mil|Absolute=True">SMT SIP Component P3-Header 4 (6901.575mil,2732.284mil) on Top Layer</acronym></a> - Component origin is already ON grid. - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6786.421mil|Location2.X=7011.917mil|Location1.Y=1323.776mil|Location2.Y=1779.839mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6786.421mil|Location2.X=7011.917mil|Location1.Y=1323.776mil|Location2.Y=1779.839mil|Absolute=True">SMT SIP Component P2-Header 4 (6913.386mil,1503.937mil) on Top Layer</acronym></a> - Component origin is already ON grid. - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6778.547mil|Location2.X=7004.043mil|Location1.Y=1941.886mil|Location2.Y=2397.949mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6778.547mil|Location2.X=7004.043mil|Location1.Y=1941.886mil|Location2.Y=2397.949mil|Absolute=True">SMT SIP Component P1-Header 4 (6905.512mil,2122.047mil) on Top Layer</acronym></a> - Component origin is already ON grid. - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6210.457mil|Location2.X=6472.457mil|Location1.Y=2497.831mil|Location2.Y=2566.331mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6210.457mil|Location2.X=6472.457mil|Location1.Y=2497.831mil|Location2.Y=2566.331mil|Absolute=True">SMT Small Component R9-Res1 (6407.457mil,2537.331mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6235.571mil|Location2.X=6547.307mil|Location1.Y=2427.331mil|Location2.Y=2503.902mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6235.571mil|Location2.X=6547.307mil|Location1.Y=2427.331mil|Location2.Y=2503.902mil|Absolute=True">SMT Small Component D9-红灯 0603 (6433.071mil,2465.831mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6225.921mil|Location2.X=6683.528mil|Location1.Y=2587.248mil|Location2.Y=3075.122mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6225.921mil|Location2.X=6683.528mil|Location1.Y=2587.248mil|Location2.Y=3075.122mil|Absolute=True">SOIC Component U6-H1102NL (6287.401mil,3006.185mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6060mil|Location2.X=6316.5mil|Location1.Y=3517.5mil|Location2.Y=3587mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6060mil|Location2.X=6316.5mil|Location1.Y=3517.5mil|Location2.Y=3587mil|Absolute=True">SMT Small Component R7-Res1 (6251.5mil,3556mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6221.984mil|Location2.X=6679.591mil|Location1.Y=1253.504mil|Location2.Y=1741.378mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6221.984mil|Location2.X=6679.591mil|Location1.Y=1253.504mil|Location2.Y=1741.378mil|Absolute=True">SOIC Component U5-H1102NL (6283.464mil,1672.441mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6215.457mil|Location2.X=6472.457mil|Location1.Y=1147.602mil|Location2.Y=1214.831mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6215.457mil|Location2.X=6472.457mil|Location1.Y=1147.602mil|Location2.Y=1214.831mil|Absolute=True">SMT Small Component R8-Res1 (6407.457mil,1181.102mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6239.071mil|Location2.X=6547.307mil|Location1.Y=1060.425mil|Location2.Y=1136.496mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6239.071mil|Location2.X=6547.307mil|Location1.Y=1060.425mil|Location2.Y=1136.496mil|Absolute=True">SMT Small Component D8-红灯 0603 (6433.071mil,1098.425mil) on Top Layer</acronym></a> - Component origin is already ON grid. - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5644.583mil|Location2.X=5975.417mil|Location1.Y=3766.142mil|Location2.Y=4033.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5644.583mil|Location2.X=5975.417mil|Location1.Y=3766.142mil|Location2.Y=4033.858mil|Absolute=True">Component VR2-AMS1117-3.3 (5810mil,3900mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6259.583mil|Location2.X=6590.417mil|Location1.Y=3756.142mil|Location2.Y=4023.858mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6259.583mil|Location2.X=6590.417mil|Location1.Y=3756.142mil|Location2.Y=4023.858mil|Absolute=True">Component VR1-AMS1117-5.0 (6425mil,3890mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6221.984mil|Location2.X=6679.591mil|Location1.Y=1922.795mil|Location2.Y=2410.669mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6221.984mil|Location2.X=6679.591mil|Location1.Y=1922.795mil|Location2.Y=2410.669mil|Absolute=True">SOIC Component U4-H1102NL (6283.464mil,2341.732mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4765.291mil|Location2.X=5222.898mil|Location1.Y=3059.883mil|Location2.Y=3547.757mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4765.291mil|Location2.X=5222.898mil|Location1.Y=3059.883mil|Location2.Y=3547.757mil|Absolute=True">SOIC Component U3-H1102NL (5161.418mil,3128.82mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4199.736mil|Location2.X=5633.806mil|Location1.Y=2558.166mil|Location2.Y=4057.666mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4199.736mil|Location2.X=5633.806mil|Location1.Y=2558.166mil|Location2.Y=4057.666mil|Absolute=True">SIP Component U2-DJ-P201J (4840.236mil,3234.166mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4155.002mil|Location2.X=5782.954mil|Location1.Y=1083.403mil|Location2.Y=2352.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4155.002mil|Location2.X=5782.954mil|Location1.Y=1083.403mil|Location2.Y=2352.244mil|Absolute=True">Component U1-HLK-RM08K (4964.568mil,1732.362mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6221.957mil|Location2.X=6472.457mil|Location1.Y=1839.48mil|Location2.Y=1906.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6221.957mil|Location2.X=6472.457mil|Location1.Y=1839.48mil|Location2.Y=1906.709mil|Absolute=True">SMT Small Component R6-Res1 (6407.457mil,1877.48mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5062mil|Location2.X=5314.055mil|Location1.Y=2446mil|Location2.Y=2519.613mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5062mil|Location2.X=5314.055mil|Location1.Y=2446mil|Location2.Y=2519.613mil|Absolute=True">SMT Small Component R5-1KΩ (1001) ±1% (5249.685mil,2484.574mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4640mil|Location2.X=4899.606mil|Location1.Y=2469.639mil|Location2.Y=2539.717mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4640mil|Location2.X=4899.606mil|Location1.Y=2469.639mil|Location2.Y=2539.717mil|Absolute=True">SMT Small Component R4-1KΩ (1001) ±1% (4835.236mil,2504.678mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5647.5mil|Location2.X=5895.87mil|Location1.Y=3487.961mil|Location2.Y=3561.166mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5647.5mil|Location2.X=5895.87mil|Location1.Y=3487.961mil|Location2.Y=3561.166mil|Absolute=True">SMT Small Component R3-1KΩ (1001) ±1% (5831.5mil,3523mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5647.5mil|Location2.X=5896.87mil|Location1.Y=3333mil|Location2.Y=3408.539mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5647.5mil|Location2.X=5896.87mil|Location1.Y=3333mil|Location2.Y=3408.539mil|Absolute=True">SMT Small Component R2-1KΩ (1001) ±1% (5832.5mil,3373.5mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5647.5mil|Location2.X=5895.37mil|Location1.Y=3637.5mil|Location2.Y=3708.539mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5647.5mil|Location2.X=5895.37mil|Location1.Y=3637.5mil|Location2.Y=3708.539mil|Absolute=True">SMT Small Component R1-1KΩ (1001) ±1% (5831mil,3673.5mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6063mil|Location2.X=6367.236mil|Location1.Y=3448.5mil|Location2.Y=3527.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6063mil|Location2.X=6367.236mil|Location1.Y=3448.5mil|Location2.Y=3527.071mil|Absolute=True">SMT Small Component D7-红灯 0603 (6253mil,3489mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5055.5mil|Location2.X=5364.736mil|Location1.Y=2374.5mil|Location2.Y=2450.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5055.5mil|Location2.X=5364.736mil|Location1.Y=2374.5mil|Location2.Y=2450.071mil|Absolute=True">SMT Small Component D6-红灯 0603 (5250.5mil,2412mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4635mil|Location2.X=4950.236mil|Location1.Y=2392.5mil|Location2.Y=2466.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4635mil|Location2.X=4950.236mil|Location1.Y=2392.5mil|Location2.Y=2466.071mil|Absolute=True">SMT Small Component D5-红灯 0603 (4836mil,2428mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6273.193mil|Location2.X=6547.307mil|Location1.Y=1754.173mil|Location2.Y=1830.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6273.193mil|Location2.X=6547.307mil|Location1.Y=1754.173mil|Location2.Y=1830.315mil|Absolute=True">SMT Small Component D4-红灯 0603 (6456.693mil,1795.276mil) on Top Layer</acronym></a> - Component origin is already ON grid. - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5647.5mil|Location2.X=5944.236mil|Location1.Y=3415.461mil|Location2.Y=3488.571mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5647.5mil|Location2.X=5944.236mil|Location1.Y=3415.461mil|Location2.Y=3488.571mil|Absolute=True">SMT Small Component D3-红灯 0603 (5830mil,3450.5mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5647.5mil|Location2.X=5948.236mil|Location1.Y=3258.961mil|Location2.Y=3332.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5647.5mil|Location2.X=5948.236mil|Location1.Y=3258.961mil|Location2.Y=3332.071mil|Absolute=True">SMT Small Component D2-红灯 0603 (5834mil,3294mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5647.5mil|Location2.X=5921.614mil|Location1.Y=3561.429mil|Location2.Y=3634.539mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5647.5mil|Location2.X=5921.614mil|Location1.Y=3561.429mil|Location2.Y=3634.539mil|Absolute=True">SMT Small Component D1-红灯 0603 (5831mil,3599.5mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5993.63mil|Location2.X=6231.715mil|Location1.Y=3726mil|Location2.Y=3801.039mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5993.63mil|Location2.X=6231.715mil|Location1.Y=3726mil|Location2.Y=3801.039mil|Absolute=True">SMT Small Component C8-100nF (104) 10% 50V (6058mil,3766mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6607.63mil|Location2.X=6857.5mil|Location1.Y=3784.5mil|Location2.Y=3864.481mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6607.63mil|Location2.X=6857.5mil|Location1.Y=3784.5mil|Location2.Y=3864.481mil|Absolute=True">SMT Small Component C7-100nF (104) 10% 50V (6672mil,3826mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5993.13mil|Location2.X=6231.715mil|Location1.Y=3794mil|Location2.Y=3869.039mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5993.13mil|Location2.X=6231.715mil|Location1.Y=3794mil|Location2.Y=3869.039mil|Absolute=True">SMT Small Component C6-10uF (106) 10% 10V (6057.5mil,3834mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6606.63mil|Location2.X=6831.215mil|Location1.Y=3713.5mil|Location2.Y=3789.039mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6606.63mil|Location2.X=6831.215mil|Location1.Y=3713.5mil|Location2.Y=3789.039mil|Absolute=True">SMT Small Component C5-10uF (106) 10% 10V (6671mil,3754mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6608.13mil|Location2.X=6833.215mil|Location1.Y=3858.5mil|Location2.Y=3934.039mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6608.13mil|Location2.X=6833.215mil|Location1.Y=3858.5mil|Location2.Y=3934.039mil|Absolute=True">SMT Small Component C4-100nF (104) 10% 50V (6672.5mil,3899mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5988.63mil|Location2.X=6231.715mil|Location1.Y=3891.5mil|Location2.Y=3966.539mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5988.63mil|Location2.X=6231.715mil|Location1.Y=3891.5mil|Location2.Y=3966.539mil|Absolute=True">SMT Small Component C3-100nF (104) 10% 50V (6053mil,3931.5mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5990.13mil|Location2.X=6231.715mil|Location1.Y=3966.461mil|Location2.Y=4036.539mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5990.13mil|Location2.X=6231.715mil|Location1.Y=3966.461mil|Location2.Y=4036.539mil|Absolute=True">SMT Small Component C2-47uF  10% 50V (6054.5mil,4001.5mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=F:\%E6%AF%94%E8%B5%9B\2019%E4%B8%AD%E5%9B%BD%E6%9C%BA%E5%99%A8%E4%BA%BA\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BFV1.0\%E8%88%B1%E5%86%85%E9%80%9A%E4%BF%A1%E6%9D%BF.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6607.63mil|Location2.X=6736.37mil|Location1.Y=3936.409mil|Location2.Y=4071.729mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=F:\比赛\2019中国机器人\舱内通信板V1.0\舱内通信板.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6607.63mil|Location2.X=6736.37mil|Location1.Y=3936.409mil|Location2.Y=4071.729mil|Absolute=True">SMT Small Component C1-10uF (106) 10% 10V (6672mil,3971.449mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

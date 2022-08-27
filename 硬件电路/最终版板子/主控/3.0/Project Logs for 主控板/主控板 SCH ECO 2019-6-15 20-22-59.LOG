@@ -1,0 +1,2 @@
+Change Pin Designator/Name:  Old Designator=U1A-46 Old Name=PE15/FSMC_D12/TIM1_BKIN/EVENTOUT New Designator =PA10/USART1_RX/TIM1_CH3/OTG_FS_ID/DCMI_D1/EVENTOUT New Name=69
+Change Pin Designator/Name:  Old Designator=U1A-69 Old Name=PA10/USART1_RX/TIM1_CH3/OTG_FS_ID/DCMI_D1/EVENTOUT New Designator =PE15/FSMC_D12/TIM1_BKIN/EVENTOUT New Name=46

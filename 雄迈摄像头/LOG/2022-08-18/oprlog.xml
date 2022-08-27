@@ -1,0 +1,19 @@
+<DATAROOT>
+	<LOGINFO>
+		<LOG id="1" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="10" btimemin="12" btimesec="45" DevId="0" type="8" channel="0" devname="" username="super" info="用户:super  登录"/>
+		<LOG id="2" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="10" btimemin="13" btimesec="2" DevId="44" type="0" channel="0" devname="192.168.1.100" username="admin" info="连接成功"/>
+		<LOG id="3" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="10" btimemin="13" btimesec="2" DevId="44" type="0" channel="0" devname="192.168.1.100" username="admin" info="通道 1 打开成功"/>
+		<LOG id="4" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="10" btimemin="28" btimesec="40" DevId="0" type="8" channel="0" devname="" username="super" info="关闭CMS"/>
+		<LOG id="5" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="10" btimemin="47" btimesec="47" DevId="0" type="8" channel="0" devname="" username="super" info="用户:super  登录"/>
+		<LOG id="6" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="10" btimemin="48" btimesec="2" DevId="44" type="0" channel="0" devname="192.168.1.100" username="admin" info="连接成功 "/>
+		<LOG id="7" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="10" btimemin="48" btimesec="2" DevId="44" type="0" channel="0" devname="192.168.1.100" username="admin" info="通道 1 打开成功"/>
+		<LOG id="8" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="10" btimemin="55" btimesec="6" DevId="44" type="0" channel="0" devname="192.168.1.100" username="admin" info="通道 1 关闭成功"/>
+		<LOG id="9" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="10" btimemin="55" btimesec="7" DevId="44" type="0" channel="0" devname="192.168.1.100" username="admin" info="通道 1 打开通道失败 未知错误"/>
+		<LOG id="10" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="10" btimemin="55" btimesec="9" DevId="44" type="8" channel="0" devname="192.168.1.100" username="admin" info="断开 "/>
+		<LOG id="11" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="10" btimemin="55" btimesec="11" DevId="44" type="0" channel="0" devname="192.168.1.100" username="admin" info="连接成功 "/>
+		<LOG id="12" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="10" btimemin="55" btimesec="13" DevId="44" type="0" channel="0" devname="192.168.1.100" username="admin" info="通道 1 打开成功"/>
+		<LOG id="13" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="12" btimemin="32" btimesec="9" DevId="44" type="0" channel="0" devname="192.168.1.100" username="admin" info="通道 1 关闭成功"/>
+		<LOG id="14" btimeyear="2022" btimemonth="8" btimeday="18" btimehour="12" btimemin="32" btimesec="9" DevId="44" type="8" channel="0" devname="192.168.1.100" username="admin" info="断开 网络错误"/>
+	</LOGINFO>
+	<GLOBAL index="15"/>
+</DATAROOT>

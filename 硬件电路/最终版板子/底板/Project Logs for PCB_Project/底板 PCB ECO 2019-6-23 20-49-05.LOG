@@ -1,0 +1,9 @@
+Added Component: Designator=M1(HOBBYWING_WING20A/30A)
+Added Pin To Net: NetName=12V Pin=M1-1
+Added Pin To Net: NetName=GND_D Pin=M1-2
+Added Pin To Net: NetName=PWM1 Pin=M1-3
+Added Pin To Net: NetName=GND_D Pin=M1-4
+Added Pin To Net: NetName=C1 Pin=M1-5
+Added Pin To Net: NetName=B1 Pin=M1-6
+Added Pin To Net: NetName=A1 Pin=M1-7
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component M1 HOBBYWING_FPV_1

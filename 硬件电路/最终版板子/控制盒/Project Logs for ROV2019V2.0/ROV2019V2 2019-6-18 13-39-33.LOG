@@ -1,0 +1,12 @@
+Added Component: Designator=D4(0805_LED_S1)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "供应商链接"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.szlcsc.com/product/details_2666.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Notepad"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SuppliersPartNumber"; Value = "C2293"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD4_A Pin=D4-A
+Added Pin To Net: NetName=GND Pin=D4-K
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component D4 蓝灯 0805
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component D6 蓝灯 0805

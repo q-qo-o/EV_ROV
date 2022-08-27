@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=GND Pin=C6-1
+Removed Pin From Net: NetName=12V Pin=C6-2
+Removed Pin From Net: NetName=GND Pin=C7-1
+Removed Pin From Net: NetName=12V Pin=C7-2
+Removed Pin From Net: NetName=GND Pin=U3-5
+Removed Pin From Net: NetName=12V Pin=U3-6
+Removed Member From Class: ClassName=ROV2019V2.0 Member=C2
+Removed Member From Class: ClassName=ROV2019V2.0 Member=C3
+Removed Member From Class: ClassName=ROV2019V2.0 Member=C6
+Removed Member From Class: ClassName=ROV2019V2.0 Member=C7
+Removed Member From Class: ClassName=ROV2019V2.0 Member=P1
+Removed Member From Class: ClassName=ROV2019V2.0 Member=U3
+Added Component: Designator=HA1(HA12N10-2636)
+Added Pin To Net: NetName=12V Pin=HA1-3
+Added Pin To Net: NetName=GND Pin=HA1-5
+Added Pin To Net: NetName=+220VDC Pin=HA1-1
+Added Net: Name=+220VDC
+Added Pin To Net: NetName=220GND Pin=HA1-2
+Added Net: Name=220GND
+Added Net: Name=E
+Added Net: Name=L
+Added Net: Name=NetD12_2
+Added Net: Name=NetD12_3
+Added Net: Name=N
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component HA1 HA12N10-2636
+Added Room: Name=ROV2019V2.0

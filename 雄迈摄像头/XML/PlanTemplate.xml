@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PlanTemplate>
+    <Template Name="全天模板" IsReadOnly="1">
+        <Period Status="1" StartTime="0" EndTime="1440" />
+        <Period Status="0" StartTime="0" EndTime="0" />
+        <Period Status="0" StartTime="0" EndTime="0" />
+        <Period Status="0" StartTime="0" EndTime="0" />
+        <Period Status="0" StartTime="0" EndTime="0" />
+        <Period Status="0" StartTime="0" EndTime="0" />
+    </Template>
+    <Template Name="空模板" IsReadOnly="1">
+        <Period Status="1" StartTime="0" EndTime="0" />
+    </Template>
+</PlanTemplate>

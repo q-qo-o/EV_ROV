@@ -1,0 +1,7 @@
+Added Component: Designator=CON1(220V接口)
+Added Pin To Net: NetName=L Pin=CON1-1
+Added Pin To Net: NetName=N Pin=CON1-2
+Added Pin To Net: NetName=E Pin=CON1-3
+Added Pin To Net: NetName=L Pin=D12-2
+Added Pin To Net: NetName=NetD12_3 Pin=D12-3
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component CON1 220V电源接口

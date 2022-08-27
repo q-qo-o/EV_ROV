@@ -1,0 +1,22 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "limits": "c",
+            "USART1.H": "cpp"
+        }
+    },
+    "extensions": {},
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": []
+    }
+}

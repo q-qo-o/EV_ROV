@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=TEMP Pin=U1-16
+Removed Pin From Net: NetName=SENSOR_LED2 Pin=U1-25
+Removed Pin From Net: NetName=RX1 Pin=U1-46
+Removed Pin From Net: NetName=PD5 Pin=U1-47
+Removed Pin From Net: NetName=WATER Pin=U1-48
+Removed Pin From Net: NetName=TX3 Pin=U1-55
+Removed Pin From Net: NetName=RX3 Pin=U1-56
+Removed Pin From Net: NetName=SENSOR_LED1 Pin=U1-69
+Removed Pin From Net: NetName=TX2 Pin=U1-86
+Removed Pin From Net: NetName=RX2 Pin=U1-87
+Removed Pin From Net: NetName=PD6 Pin=U1-91
+Added Pin To Net: NetName=SENSOR_LED2 Pin=U1-24
+Added Pin To Net: NetName=TX2 Pin=U1-25
+Added Pin To Net: NetName=RX2 Pin=U1-26
+Added Pin To Net: NetName=TEMP Pin=U1-29
+Added Pin To Net: NetName=WATER Pin=U1-46
+Added Pin To Net: NetName=TX3 Pin=U1-47
+Added Pin To Net: NetName=RX3 Pin=U1-48
+Added Pin To Net: NetName=RX1 Pin=U1-69
+Added Pin To Net: NetName=SENSOR_LED1 Pin=U1-70
+Added Pin To Net: NetName=PD5 Pin=U1-86
+Added Pin To Net: NetName=PD6 Pin=U1-87
+Added Pin To Net: NetName=CAN1_RX Pin=U1-81
+Added Pin To Net: NetName=CAN1_RX Pin=U4-4
+Added Net: Name=CAN1_RX
+Added Pin To Net: NetName=CAN1_TX Pin=U1-82
+Added Pin To Net: NetName=CAN1_TX Pin=U4-1
+Added Net: Name=CAN1_TX
+Added Pin To Net: NetName=CAN2_RX Pin=U1-91
+Added Pin To Net: NetName=CAN2_RX Pin=U2-4
+Added Net: Name=CAN2_RX
+Added Pin To Net: NetName=CAN2_TX Pin=U1-92
+Added Pin To Net: NetName=CAN2_TX Pin=U2-1
+Added Net: Name=CAN2_TX
+Added Member To Class: ClassName=Ö÷¿Ø°å Member=Component U1 STM32F407VET6

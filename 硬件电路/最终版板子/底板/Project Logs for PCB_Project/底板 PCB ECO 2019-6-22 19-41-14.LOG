@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=Camera NewDesignator=Camera1
+Added Component: Designator=Camera2(Molex-4)
+Added Pin To Net: NetName=12V Pin=Camera2-1
+Added Pin To Net: NetName=GND_D Pin=Camera2-4
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component Camera2 Header 4

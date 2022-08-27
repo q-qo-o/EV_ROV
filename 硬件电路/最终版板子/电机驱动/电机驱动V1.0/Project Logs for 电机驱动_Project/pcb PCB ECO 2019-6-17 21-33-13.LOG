@@ -1,0 +1,18 @@
+Change Component Designator: OldDesignator=CAN NewDesignator=CAN1
+Change Component Designator: OldDesignator=PWM NewDesignator=CAN3
+Added Component: Designator=D5(0603_LED_S1)
+Added Component: Designator=D7(0603_LED_S1)
+Added Component: Designator=D8(0603_LED_S1)
+Added Component: Designator=D9(0603_LED_S1)
+Added Pin To Net: NetName=NetD3_A Pin=D5-A
+Added Pin To Net: NetName=LED Pin=D5-K
+Added Pin To Net: NetName=VCC3.3 Pin=D7-A
+Added Pin To Net: NetName=NetD2_K Pin=D7-K
+Added Pin To Net: NetName=VCC5_D Pin=D8-A
+Added Pin To Net: NetName=NetD4_K Pin=D8-K
+Added Pin To Net: NetName=NetD1_A Pin=D9-A
+Added Pin To Net: NetName=GND Pin=D9-K
+Added Member To Class: ClassName=原理图1 Member=Component D5 蓝灯 0603
+Added Member To Class: ClassName=原理图1 Member=Component D7 红灯 0603
+Added Member To Class: ClassName=原理图1 Member=Component D8 红灯 0603
+Added Member To Class: ClassName=原理图1 Member=Component D9 蓝灯 0603

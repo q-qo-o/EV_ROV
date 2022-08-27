@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=+5V Pin=D7-A
+Added Component: Designator=R7(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "供应商链接"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.szlcsc.com/product/details_21904.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SuppliersPartNumber"; Value = "C21190"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5V Pin=R7-2
+Added Pin To Net: NetName=NetD7_A Pin=D7-A
+Added Pin To Net: NetName=NetD7_A Pin=R7-1
+Added Net: Name=NetD7_A
+Added Member To Class: ClassName=舱内通信板 Member=Component R7 Res1
+Added Room: Name=舱内通信板

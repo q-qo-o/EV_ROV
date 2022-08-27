@@ -1,0 +1,16 @@
+Added Component: Designator=CON2(220V直接口)
+Added Component: Designator=D12(整流桥)
+Added Component: Designator=MT1(MT2200PD-6)
+Added Pin To Net: NetName=+220VDC Pin=CON2-1
+Added Pin To Net: NetName=220GND Pin=CON2-2
+Added Pin To Net: NetName=L Pin=D12-2
+Added Pin To Net: NetName=NetD12_2 Pin=D12-2
+Added Pin To Net: NetName=NetD12_3 Pin=D12-3
+Added Pin To Net: NetName=N Pin=D12-3
+Added Pin To Net: NetName=NetD12_2 Pin=MT1-1
+Added Pin To Net: NetName=NetD12_3 Pin=MT1-3
+Added Pin To Net: NetName=+220VDC Pin=MT1-4
+Added Pin To Net: NetName=220GND Pin=MT1-5
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component CON2 220直流接口
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component D12 整流桥
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component MT1 MT2200PD-6

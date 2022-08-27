@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=TX1 Pin=P5-2
+Removed Pin From Net: NetName=RX1 Pin=P5-3
+Added Pin To Net: NetName=RX1_1 Pin=P5-3
+Added Net: Name=RX1_1
+Added Pin To Net: NetName=TX1_1 Pin=P5-2
+Added Net: Name=TX1_1
+Added Room: Name=中国机器人底板V1.0

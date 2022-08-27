@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=TX6 Pin=P20-2
+Removed Pin From Net: NetName=GND_D Pin=U2-1
+Removed Pin From Net: NetName=GND_D Pin=U2-4
+Added Component: Designator=P21(Molex-4)
+Added Component: Designator=U3(稳压模块)
+Added Pin To Net: NetName=DL_N Pin=P20-2
+Added Pin To Net: NetName=TX6 Pin=P20-2
+Added Pin To Net: NetName=GND_DIANLI Pin=U2-4
+Added Pin To Net: NetName=GND_D Pin=U2-1
+Added Pin To Net: NetName=12V Pin=U2-2
+Added Pin To Net: NetName=5V_D Pin=U2-3
+Added Pin To Net: NetName=GND_D Pin=U2-4
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component P19 Header 2
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component P21 Header 4
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component U3 3A稳压模块
+Added Room: Name=中国机器人底板V1.0

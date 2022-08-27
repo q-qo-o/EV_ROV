@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UR>
+    <GROUPS>
+        <GROUP level="1" name="administrator" describe="administrator">
+            <POWER0 f0="1">
+                <DEVICE devID="27">
+                    <CHANNEL devID="27" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="30">
+                    <CHANNEL devID="30" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="33">
+                    <CHANNEL devID="33" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="36">
+                    <CHANNEL devID="36" Channel="0" />
+                    <CHANNEL devID="36" Channel="1" />
+                    <CHANNEL devID="36" Channel="2" />
+                    <CHANNEL devID="36" Channel="3" />
+                    <CHANNEL devID="36" Channel="4" />
+                    <CHANNEL devID="36" Channel="5" />
+                    <CHANNEL devID="36" Channel="6" />
+                    <CHANNEL devID="36" Channel="7" />
+                    <CHANNEL devID="36" Channel="8" />
+                    <CHANNEL devID="36" Channel="9" />
+                    <CHANNEL devID="36" Channel="10" />
+                    <CHANNEL devID="36" Channel="11" />
+                    <CHANNEL devID="36" Channel="12" />
+                    <CHANNEL devID="36" Channel="13" />
+                    <CHANNEL devID="36" Channel="14" />
+                    <CHANNEL devID="36" Channel="15" />
+                </DEVICE>
+                <DEVICE devID="53">
+                    <CHANNEL devID="53" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="56">
+                    <CHANNEL devID="56" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="74">
+                    <CHANNEL devID="74" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="77">
+                    <CHANNEL devID="77" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="28">
+                    <CHANNEL devID="28" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="40">
+                    <CHANNEL devID="40" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="44">
+                    <CHANNEL devID="44" Channel="0" />
+                </DEVICE>
+            </POWER0>
+            <POWER1 f1="1">
+                <DEVICE devID="27">
+                    <CHANNEL devID="27" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="30">
+                    <CHANNEL devID="30" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="33">
+                    <CHANNEL devID="33" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="36">
+                    <CHANNEL devID="36" Channel="0" />
+                    <CHANNEL devID="36" Channel="1" />
+                    <CHANNEL devID="36" Channel="2" />
+                    <CHANNEL devID="36" Channel="3" />
+                    <CHANNEL devID="36" Channel="4" />
+                    <CHANNEL devID="36" Channel="5" />
+                    <CHANNEL devID="36" Channel="6" />
+                    <CHANNEL devID="36" Channel="7" />
+                    <CHANNEL devID="36" Channel="8" />
+                    <CHANNEL devID="36" Channel="9" />
+                    <CHANNEL devID="36" Channel="10" />
+                    <CHANNEL devID="36" Channel="11" />
+                    <CHANNEL devID="36" Channel="12" />
+                    <CHANNEL devID="36" Channel="13" />
+                    <CHANNEL devID="36" Channel="14" />
+                    <CHANNEL devID="36" Channel="15" />
+                </DEVICE>
+                <DEVICE devID="53">
+                    <CHANNEL devID="53" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="56">
+                    <CHANNEL devID="56" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="74">
+                    <CHANNEL devID="74" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="77">
+                    <CHANNEL devID="77" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="28">
+                    <CHANNEL devID="28" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="40">
+                    <CHANNEL devID="40" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="44">
+                    <CHANNEL devID="44" Channel="0" />
+                </DEVICE>
+            </POWER1>
+            <POWER2 f2="1">
+                <DEVICE devID="27">
+                    <CHANNEL devID="27" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="30">
+                    <CHANNEL devID="30" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="33">
+                    <CHANNEL devID="33" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="36">
+                    <CHANNEL devID="36" Channel="0" />
+                    <CHANNEL devID="36" Channel="1" />
+                    <CHANNEL devID="36" Channel="2" />
+                    <CHANNEL devID="36" Channel="3" />
+                    <CHANNEL devID="36" Channel="4" />
+                    <CHANNEL devID="36" Channel="5" />
+                    <CHANNEL devID="36" Channel="6" />
+                    <CHANNEL devID="36" Channel="7" />
+                    <CHANNEL devID="36" Channel="8" />
+                    <CHANNEL devID="36" Channel="9" />
+                    <CHANNEL devID="36" Channel="10" />
+                    <CHANNEL devID="36" Channel="11" />
+                    <CHANNEL devID="36" Channel="12" />
+                    <CHANNEL devID="36" Channel="13" />
+                    <CHANNEL devID="36" Channel="14" />
+                    <CHANNEL devID="36" Channel="15" />
+                </DEVICE>
+                <DEVICE devID="53">
+                    <CHANNEL devID="53" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="56">
+                    <CHANNEL devID="56" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="74">
+                    <CHANNEL devID="74" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="77">
+                    <CHANNEL devID="77" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="28">
+                    <CHANNEL devID="28" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="40">
+                    <CHANNEL devID="40" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="44">
+                    <CHANNEL devID="44" Channel="0" />
+                </DEVICE>
+            </POWER2>
+            <POWER3 f3="1">
+                <DEVICE devID="27" />
+                <DEVICE devID="30" />
+                <DEVICE devID="33" />
+                <DEVICE devID="36" />
+                <DEVICE devID="53" />
+                <DEVICE devID="56" />
+                <DEVICE devID="74" />
+                <DEVICE devID="77" />
+                <DEVICE devID="28" />
+                <DEVICE devID="40" />
+                <DEVICE devID="44" />
+            </POWER3>
+            <POWER4 f4="1" />
+            <POWER5 f5="1" />
+            <POWER6 f6="1" />
+            <POWER7 f7="1" />
+            <POWER8 f8="1" />
+            <POWER9 f9="1" />
+            <POWER10 f10="1">
+                <DEVICE devID="27">
+                    <CHANNEL devID="27" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="30">
+                    <CHANNEL devID="30" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="33">
+                    <CHANNEL devID="33" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="36">
+                    <CHANNEL devID="36" Channel="0" />
+                    <CHANNEL devID="36" Channel="1" />
+                    <CHANNEL devID="36" Channel="2" />
+                    <CHANNEL devID="36" Channel="3" />
+                    <CHANNEL devID="36" Channel="4" />
+                    <CHANNEL devID="36" Channel="5" />
+                    <CHANNEL devID="36" Channel="6" />
+                    <CHANNEL devID="36" Channel="7" />
+                    <CHANNEL devID="36" Channel="8" />
+                    <CHANNEL devID="36" Channel="9" />
+                    <CHANNEL devID="36" Channel="10" />
+                    <CHANNEL devID="36" Channel="11" />
+                    <CHANNEL devID="36" Channel="12" />
+                    <CHANNEL devID="36" Channel="13" />
+                    <CHANNEL devID="36" Channel="14" />
+                    <CHANNEL devID="36" Channel="15" />
+                </DEVICE>
+                <DEVICE devID="53">
+                    <CHANNEL devID="53" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="56">
+                    <CHANNEL devID="56" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="74">
+                    <CHANNEL devID="74" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="77">
+                    <CHANNEL devID="77" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="28">
+                    <CHANNEL devID="28" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="40">
+                    <CHANNEL devID="40" Channel="0" />
+                </DEVICE>
+                <DEVICE devID="44">
+                    <CHANNEL devID="44" Channel="0" />
+                </DEVICE>
+            </POWER10>
+        </GROUP>
+    </GROUPS>
+    <USERS>
+        <USER name="super" password="44E4FFB1A5C504A3" group="administrator" describe="" stop="0" lock="0" />
+    </USERS>
+</UR>

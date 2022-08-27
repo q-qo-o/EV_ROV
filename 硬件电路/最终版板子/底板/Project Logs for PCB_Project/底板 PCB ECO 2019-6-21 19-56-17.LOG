@@ -1,0 +1,14 @@
+Added Component: Designator=M1(PCBComponent_1)
+Added Component: Designator=M2(PCBComponent_1)
+Added Pin To Net: NetName=12V Pin=M1-1
+Added Pin To Net: NetName=GND_D Pin=M1-4
+Added Pin To Net: NetName=C1 Pin=M1-5
+Added Pin To Net: NetName=B1 Pin=M1-6
+Added Pin To Net: NetName=A1 Pin=M1-7
+Added Pin To Net: NetName=12V Pin=M2-1
+Added Pin To Net: NetName=GND_D Pin=M2-4
+Added Pin To Net: NetName=C2 Pin=M2-5
+Added Pin To Net: NetName=B2 Pin=M2-6
+Added Pin To Net: NetName=A2 Pin=M2-7
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component M1 HOBBYWING_FPV_1
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component M2 HOBBYWING_FPV_1

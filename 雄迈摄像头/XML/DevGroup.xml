@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DEVGROUP>
+    <GROUP name="111" groupID="2" parentID="0">
+        <DEVICE devID="28" />
+        <DEVICE devID="36" />
+        <DEVICE devID="40" />
+        <DEVICE devID="44" />
+    </GROUP>
+    <GLOBAL index="3" />
+    <VERSION version="1" />
+</DEVGROUP>

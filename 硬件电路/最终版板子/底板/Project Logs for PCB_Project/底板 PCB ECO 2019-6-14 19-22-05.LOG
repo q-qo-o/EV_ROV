@@ -1,0 +1,32 @@
+Change Component Designator: OldDesignator=P11 NewDesignator=P13
+Change Component Designator: OldDesignator=P12 NewDesignator=P11
+Change Component Designator: OldDesignator=P13 NewDesignator=P12
+Added Component: Designator=M2(HOBBYWING_WING20A/30A)
+Added Component: Designator=U2(金升阳稳压模块单路)
+Added Component: Designator=U8(金升阳稳压模块单路)
+Added Pin To Net: NetName=12V Pin=M2-1
+Added Pin To Net: NetName=PWM2 Pin=M2-2
+Added Pin To Net: NetName=GND_D Pin=M2-3
+Added Pin To Net: NetName=GND_D Pin=M2-4
+Added Pin To Net: NetName=C2 Pin=M2-5
+Added Pin To Net: NetName=B2 Pin=M2-6
+Added Pin To Net: NetName=A2 Pin=M2-7
+Added Pin To Net: NetName=12V_MCU Pin=U2-2
+Added Pin To Net: NetName=GND_MCU Pin=U2-3
+Added Pin To Net: NetName=GND_DIANLI Pin=U2-4
+Added Pin To Net: NetName=12V_DIANLI Pin=U2-5
+Added Pin To Net: NetName=GND_D Pin=U3-1
+Added Pin To Net: NetName=12V Pin=U3-2
+Added Pin To Net: NetName=5V_D Pin=U3-3
+Added Pin To Net: NetName=GND_D Pin=U3-4
+Added Pin To Net: NetName=12V_MCU Pin=U8-2
+Added Pin To Net: NetName=GND_MCU Pin=U8-3
+Added Pin To Net: NetName=GND Pin=U8-4
+Added Pin To Net: NetName=5V Pin=U8-5
+Change Net Name : Old Net Name=NetP11_2 New Net Name=NetP13_2
+Change Net Name : Old Net Name=NetP11_3 New Net Name=NetP13_3
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component M2 HOBBYWING_FPV_1
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component U2 金升阳稳压模块单路
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component U3 3A稳压模块
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component U8 金升阳稳压模块单路
+Added Room: Name=中国机器人底板V1.0

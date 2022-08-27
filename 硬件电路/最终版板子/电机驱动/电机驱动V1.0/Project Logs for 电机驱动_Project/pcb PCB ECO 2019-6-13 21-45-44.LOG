@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=OSC_IN Pin=J1-1
+Removed Pin From Net: NetName=OSC_OUT Pin=J1-2
+Removed Pin From Net: NetName=GND Pin=J1-3
+Removed Member From Class: ClassName=原理图1 Member=J1
+Added Component: Designator=Y?(SMD-5032_2P)
+Added Pin To Net: NetName=OSC_OUT Pin=Y?-1
+Added Pin To Net: NetName=OSC_IN Pin=Y?-2
+Added Member To Class: ClassName=原理图1 Member=Component Y? 8MHz ±20ppm 20pF
+Added Room: Name=原理图1

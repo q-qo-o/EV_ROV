@@ -1,0 +1,43 @@
+Change Component Footprint: Designator=R15 Old Footprint=0603_R New Footprint=LC-0603_R
+Added Component: Designator=C1(LC-0603_C)
+Added Component: Designator=C2(LC-0603_C)
+Added Component: Designator=C3(LC-0603_C)
+Added Component: Designator=C6(LC-0603_C)
+Added Component: Designator=C7(LC-1206_C)
+Added Component: Designator=P1(USB_B)
+Added Component: Designator=U3(SOP16M)
+Added Component: Designator=X1(XTAL2)
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=NetC3_2 Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=5V Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=5V Pin=C7-2
+Added Pin To Net: NetName=5V Pin=P1-1
+Added Pin To Net: NetName=D- Pin=P1-2
+Added Pin To Net: NetName=D+ Pin=P1-3
+Added Pin To Net: NetName=GND Pin=P1-4
+Added Pin To Net: NetName=GND Pin=U3-1
+Added Pin To Net: NetName=TX Pin=U3-2
+Added Pin To Net: NetName=RX Pin=U3-3
+Added Pin To Net: NetName=NetC3_2 Pin=U3-4
+Added Pin To Net: NetName=D+ Pin=U3-5
+Added Pin To Net: NetName=D- Pin=U3-6
+Added Pin To Net: NetName=NetC2_2 Pin=U3-7
+Added Pin To Net: NetName=NetC1_2 Pin=U3-8
+Added Pin To Net: NetName=5V Pin=U3-16
+Added Pin To Net: NetName=NetC1_2 Pin=X1-1
+Added Pin To Net: NetName=NetC2_2 Pin=X1-2
+Change Net Name : Old Net Name=NetC3_2 New Net Name=NetC3_1
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component C1 22pF (220) 5% 50V
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component C2 22pF (220) 5% 50V
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component C3 100nF (104) 10% 50V
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component C6 100nF (104) 10% 50V
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component C7 10uF (106) 10% 50V
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component P1 Header 4
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component U3 CH340G
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component X1 12MHz

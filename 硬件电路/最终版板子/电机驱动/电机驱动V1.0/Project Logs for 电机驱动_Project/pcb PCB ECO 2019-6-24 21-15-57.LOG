@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=GND Pin=D1-K
+Removed Pin From Net: NetName=GND Pin=D9-K
+Removed Member From Class: ClassName=原理图1 Member=D1
+Removed Member From Class: ClassName=原理图1 Member=D9

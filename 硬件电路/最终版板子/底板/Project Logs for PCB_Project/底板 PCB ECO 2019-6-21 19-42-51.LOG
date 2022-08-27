@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=TPTX0+ Pin=P1-1
+Removed Pin From Net: NetName=TPTX0- Pin=P1-2
+Removed Pin From Net: NetName=TPRX0+ Pin=P1-3
+Removed Pin From Net: NetName=TPRX0- Pin=P1-4
+Removed Member From Class: ClassName=中国机器人底板V1.0 Member=P1
+Added Component: Designator=Camera(Modolex_6P)
+Added Pin To Net: NetName=TPTX0+ Pin=Camera-1
+Added Pin To Net: NetName=TPTX0- Pin=Camera-2
+Added Pin To Net: NetName=TPRX0+ Pin=Camera-3
+Added Pin To Net: NetName=TPRX0- Pin=Camera-4
+Added Pin To Net: NetName=12V_MCU Pin=Camera-5
+Added Pin To Net: NetName=GND_MCU Pin=Camera-6
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component Camera Header 6

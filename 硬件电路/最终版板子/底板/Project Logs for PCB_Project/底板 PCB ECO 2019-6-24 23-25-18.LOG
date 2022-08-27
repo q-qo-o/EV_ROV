@@ -1,0 +1,10 @@
+Added Component: Designator=D1(0603_LED_S1)
+Added Component: Designator=R5(0603_R)
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Pin To Net: NetName=NetD1_A Pin=P31-6
+Added Net: Name=NetD1_A
+Added Pin To Net: NetName=NetD1_K Pin=D1-K
+Added Pin To Net: NetName=NetD1_K Pin=R5-1
+Added Net: Name=NetD1_K
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component D1 红灯 0603
+Added Member To Class: ClassName=中国机器人底板V1.0 Member=Component R5 10KΩ (1002) ±1%

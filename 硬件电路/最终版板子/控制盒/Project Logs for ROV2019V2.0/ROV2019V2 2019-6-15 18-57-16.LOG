@@ -1,0 +1,11 @@
+Added Component: Designator=U6(433)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=RX Pin=U6-3
+Added Pin To Net: NetName=TX Pin=U6-4
+Added Pin To Net: NetName=3.3V Pin=U6-6
+Added Pin To Net: NetName=GND Pin=U6-7
+Added Pin To Net: NetName=GND Pin=U6-9
+Added Pin To Net: NetName=GND Pin=U6-15
+Added Pin To Net: NetName=GND Pin=U6-16
+Added Pin To Net: NetName=GND Pin=U6-17
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component U6 433T30S

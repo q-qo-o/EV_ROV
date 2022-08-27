@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=12V Pin=P32-1
+Removed Pin From Net: NetName=GND_D Pin=P32-4
+Added Pin To Net: NetName=12V_DIANLI Pin=P32-1
+Added Pin To Net: NetName=GND_DIANLI Pin=P32-4

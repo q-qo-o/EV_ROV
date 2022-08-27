@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GND Pin=P3-8
+Removed Pin From Net: NetName=GND Pin=P3-13
+Removed Pin From Net: NetName=GND Pin=P3-14
+Change Component Comment : Designator=P3 Old Comment=RJ45 New Comment=220V电源接口
+Change Component Designator: OldDesignator=P3 NewDesignator=CON1
+Added Pin To Net: NetName=L Pin=CON1-1
+Added Pin To Net: NetName=N Pin=CON1-2
+Change Net Name : Old Net Name=TPRX0+ New Net Name=E
+Added Room: Name=ROV2019V2.0

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Parameters>
+  <para>
+    <id>1</id>
+    <depth_p>11</depth_p>
+    <depth_p_l>11</depth_p_l>
+    <depth_i>11</depth_i>
+    <depth_i_l>11</depth_i_l>
+    <depth_d>11</depth_d>
+    <depth_d_l>11</depth_d_l>
+    <boat_p>11</boat_p>
+    <boat_p_l>11</boat_p_l>
+    <boat_i>11</boat_i>
+    <boat_i_l>11</boat_i_l>
+    <boat_d>11</boat_d>
+    <boat_d_l>11</boat_d_l>
+    <pitch_p>11</pitch_p>
+    <pitch_p_l>11</pitch_p_l>
+    <pitch_i>11</pitch_i>
+    <pitch_i_l>11</pitch_i_l>
+    <pitch_d>11</pitch_d>
+    <pitch_d_l>11</pitch_d_l>
+    <roll_p>11</roll_p>
+    <roll_p_l>11</roll_p_l>
+    <roll_i>11</roll_i>
+    <roll_i_l>11</roll_i_l>
+    <roll_d>11</roll_d>
+    <roll_d_l>11</roll_d_l>
+    <min_value1>10</min_value1>
+    <max_value1>11</max_value1>
+    <min_value2>10</min_value2>
+    <max_value2>10</max_value2>
+    <throttle>60</throttle>
+  </para>
+</Parameters>

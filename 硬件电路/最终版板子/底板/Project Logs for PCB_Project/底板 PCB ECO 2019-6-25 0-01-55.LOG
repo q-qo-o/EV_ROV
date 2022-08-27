@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetD1_A Pin=P31-6
+Change Component DesignItemId : Designator=D1 Old DesignItemId=0603 红灯 New DesignItemId=0603 绿灯
+Change Component Comment : Designator=D1 Old Comment=红灯 0603 New Comment=绿灯 0603
+Change Component Library : Designator=D1 Old Library=转接板.IntLib New Library=F4主控.IntLib
+Added Pin To Net: NetName=NetD1_A Pin=P31-5
+Added Room: Name=中国机器人底板V1.0

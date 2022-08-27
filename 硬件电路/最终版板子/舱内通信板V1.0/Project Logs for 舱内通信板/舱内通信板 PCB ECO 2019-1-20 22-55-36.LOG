@@ -1,0 +1,22 @@
+Added Component: Designator=D9(LC-0603_LED_S1)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "供应商链接"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.szlcsc.com/product/details_2659.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SuppliersPartNumber"; Value = "C2286"; VariantName = "[No Variations]"
+Added Component: Designator=R9(R0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "供应商链接"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.szlcsc.com/product/details_21904.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SuppliersPartNumber"; Value = "C21190"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=EL4 Pin=D9-K
+Added Pin To Net: NetName=+5V Pin=R9-1
+Added Pin To Net: NetName=NetD9_A Pin=D9-A
+Added Pin To Net: NetName=NetD9_A Pin=R9-2
+Added Net: Name=NetD9_A
+Added Member To Class: ClassName=舱内通信板 Member=Component D9 红灯 0603
+Added Member To Class: ClassName=舱内通信板 Member=Component R9 Res1
+Added Room: Name=舱内通信板

@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=PWM_M1 Pin=M1-3
+Removed Pin From Net: NetName=PWM_M2 Pin=M2-3
+Removed Pin From Net: NetName=PWM_M3 Pin=M3-3
+Removed Pin From Net: NetName=PWM_M4 Pin=M4-3
+Added Pin To Net: NetName=PWM_M4 Pin=M1-3
+Added Pin To Net: NetName=PWM_M3 Pin=M2-3
+Added Pin To Net: NetName=PWM_M2 Pin=M3-3
+Added Pin To Net: NetName=PWM_M1 Pin=M4-3
+Added Member To Class: ClassName=原理图1 Member=Component R19 10KΩ (1002) ±1%
+Added Room: Name=原理图1

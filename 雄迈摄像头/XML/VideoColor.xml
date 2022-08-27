@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<VideoColor>
+    <Colors DevID="20" Name="">
+        <Color ChannelNo="0" Bright="64" Contrast="64" Hue="64" Saturation="64" />
+    </Colors>
+</VideoColor>

@@ -1,0 +1,27 @@
+<DATAROOT>
+	<DEVINFO>
+		<DEV id="28" ip="1" area="111" name="192.168.1.185" host="192.168.1.185" port="34567" port2="0" cameras="1" devcType="1" alarmcameras="2" ddnsFlag="0" DDNSHost="" pos="0" desc="" username="admin" OrgId="2" vendor="0" SerialID="" link-mode="0" arspstatus="0" password="44E4FFB1A5C504A3">
+			<DEV id="29" type="0" name="192.168.1.185_1" channel="0" desc="" CameraType=""/>
+			<DEV id="30" type="1" name="192.168.1.185_alarm1" channel="0" desc=""/>
+			<DEV id="31" type="1" name="192.168.1.185_alarm2" channel="1" desc=""/>
+		</DEV>
+		<DEV id="36" ip="1" area="111" name="192.168.1.102" host="192.168.1.102" port="34567" port2="0" cameras="1" devcType="1" alarmcameras="2" ddnsFlag="0" DDNSHost="" pos="0" desc="" username="admin" OrgId="2" vendor="0" SerialID="" link-mode="0" arspstatus="0" password="44E4FFB1A5C504A3">
+			<DEV id="37" type="0" name="192.168.1.102_1" channel="0" desc="" CameraType=""/>
+			<DEV id="38" type="1" name="192.168.1.102_alarm1" channel="0" desc=""/>
+			<DEV id="39" type="1" name="192.168.1.102_alarm2" channel="1" desc=""/>
+		</DEV>
+		<DEV id="40" ip="1" area="111" name="192.168.1.10" host="192.168.1.10" port="34567" port2="0" cameras="1" devcType="1" alarmcameras="2" ddnsFlag="0" DDNSHost="" pos="0" desc="" username="admin" OrgId="2" vendor="0" SerialID="" link-mode="0" arspstatus="0" password="44E4FFB1A5C504A3">
+			<DEV id="41" type="0" name="192.168.1.10_1" channel="0" desc="" CameraType=""/>
+			<DEV id="42" type="1" name="192.168.1.10_alarm1" channel="0" desc=""/>
+			<DEV id="43" type="1" name="192.168.1.10_alarm2" channel="1" desc=""/>
+		</DEV>
+		<DEV id="44" ip="1" area="111" name="192.168.1.100" host="192.168.1.100" port="34567" port2="0" cameras="1" devcType="1" alarmcameras="2" ddnsFlag="0" DDNSHost="" pos="0" desc="" username="admin" OrgId="2" vendor="0" SerialID="" link-mode="0" arspstatus="0" password="44E4FFB1A5C504A3">
+			<DEV id="45" type="0" name="192.168.1.100_1" channel="0" desc=""/>
+			<DEV id="46" type="1" name="192.168.1.100_alarm1" channel="0" desc=""/>
+			<DEV id="47" type="1" name="192.168.1.100_alarm2" channel="1" desc=""/>
+		</DEV>
+	</DEVINFO>
+	<IMGINFO/>
+	<MAPINFO/>
+	<GLOBAL index="48"/>
+</DATAROOT>

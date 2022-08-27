@@ -1,0 +1,29 @@
+Change Net Name : Old Net Name=NetM1_6 New Net Name=M46
+Change Net Name : Old Net Name=NetM2_6 New Net Name=M36
+Change Net Name : Old Net Name=NetM3_6 New Net Name=M26
+Change Net Name : Old Net Name=NetM4_6 New Net Name=M16
+Added Pin To Net: NetName=M15 Pin=M4-5
+Added Pin To Net: NetName=M15 Pin=P6-3
+Added Net: Name=M15
+Added Pin To Net: NetName=M17 Pin=M4-7
+Added Pin To Net: NetName=M17 Pin=P6-1
+Added Net: Name=M17
+Added Pin To Net: NetName=M25 Pin=M3-5
+Added Pin To Net: NetName=M25 Pin=P5-3
+Added Net: Name=M25
+Added Pin To Net: NetName=M27 Pin=M3-7
+Added Pin To Net: NetName=M27 Pin=P5-1
+Added Net: Name=M27
+Added Pin To Net: NetName=M35 Pin=M2-5
+Added Pin To Net: NetName=M35 Pin=P4-3
+Added Net: Name=M35
+Added Pin To Net: NetName=M37 Pin=M2-7
+Added Pin To Net: NetName=M37 Pin=P4-1
+Added Net: Name=M37
+Added Pin To Net: NetName=M45 Pin=M1-5
+Added Pin To Net: NetName=M45 Pin=P3-3
+Added Net: Name=M45
+Added Pin To Net: NetName=M47 Pin=M1-7
+Added Pin To Net: NetName=M47 Pin=P3-1
+Added Net: Name=M47
+Added Room: Name=‘≠¿ÌÕº1

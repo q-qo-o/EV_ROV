@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=GND_DIANLI Pin=U2-2
+Removed Pin From Net: NetName=12V_DIANLI Pin=U2-3
+Removed Pin From Net: NetName=12V_MCU Pin=U2-4
+Removed Pin From Net: NetName=GND_MCU Pin=U2-5
+Removed Pin From Net: NetName=GND Pin=U8-2
+Removed Pin From Net: NetName=5V Pin=U8-3
+Removed Pin From Net: NetName=12V_MCU Pin=U8-4
+Removed Pin From Net: NetName=GND_MCU Pin=U8-5
+Added Pin To Net: NetName=GND_MCU Pin=U2-2
+Added Pin To Net: NetName=12V_MCU Pin=U2-3
+Added Pin To Net: NetName=12V_DIANLI Pin=U2-4
+Added Pin To Net: NetName=GND_DIANLI Pin=U2-5
+Added Pin To Net: NetName=GND_MCU Pin=U8-2
+Added Pin To Net: NetName=12V_MCU Pin=U8-3
+Added Pin To Net: NetName=5V Pin=U8-4
+Added Pin To Net: NetName=GND Pin=U8-5
+Added Room: Name=中国机器人底板V1.0

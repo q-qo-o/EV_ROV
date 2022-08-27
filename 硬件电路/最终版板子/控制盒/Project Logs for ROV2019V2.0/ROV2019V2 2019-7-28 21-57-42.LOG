@@ -1,0 +1,6 @@
+Added Component: Designator=D12(整流桥)
+Added Pin To Net: NetName=220V_VCC Pin=D12-1
+Added Pin To Net: NetName=L Pin=D12-2
+Added Pin To Net: NetName=N Pin=D12-3
+Added Pin To Net: NetName=220V_GND Pin=D12-4
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component D12 整流桥

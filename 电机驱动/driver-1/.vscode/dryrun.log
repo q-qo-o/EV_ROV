@@ -1,0 +1,6 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'e:/Workspace/projects/作业对抗/电机驱动/driver-1'
+make.exe: Leaving directory 'e:/Workspace/projects/作业对抗/电机驱动/driver-1'
+ 
+make.exe: *** No targets specified and no makefile found.  Stop.
+

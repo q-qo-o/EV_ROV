@@ -1,0 +1,6 @@
+<DATAROOT>
+	<LOGINFO>
+		<LOG id="1" btimeyear="2022" btimemonth="8" btimeday="16" btimehour="15" btimemin="33" btimesec="11" DevId="44" type="11" channel="0" devname="192.168.1.100" username="admin" info="通道 1 人形检测"/>
+	</LOGINFO>
+	<GLOBAL index="2"/>
+</DATAROOT>

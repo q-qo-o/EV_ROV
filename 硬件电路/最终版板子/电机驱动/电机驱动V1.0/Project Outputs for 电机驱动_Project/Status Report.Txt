@@ -1,0 +1,10 @@
+Output: Mixed Sim
+Type  : AdvSimNetlist
+From  : Project [电机驱动_Project.PrjPcb]
+   Generated File[电机驱动_Project.nsx]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 23:14:43 On 2020/7/25

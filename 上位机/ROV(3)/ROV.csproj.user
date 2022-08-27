@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="ROV\AirSpeedIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ROV\AltimeterInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ROV\AttitudeIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ROV\frm_DebugMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ROV\frm_MainRov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ROV\HeadingIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ROV\InstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ROV\TurnCoordinatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ROV\VerticalProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ROV\VerticalSpeedIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

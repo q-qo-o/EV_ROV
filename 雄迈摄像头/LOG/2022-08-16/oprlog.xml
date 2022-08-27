@@ -1,0 +1,13 @@
+<DATAROOT>
+	<LOGINFO>
+		<LOG id="1" btimeyear="2022" btimemonth="8" btimeday="16" btimehour="15" btimemin="3" btimesec="45" DevId="0" type="8" channel="0" devname="" username="super" info="用户:super  登录"/>
+		<LOG id="2" btimeyear="2022" btimemonth="8" btimeday="16" btimehour="15" btimemin="3" btimesec="57" DevId="40" type="0" channel="0" devname="192.168.1.10" username="admin" info="连接失败 无法找到该设备"/>
+		<LOG id="3" btimeyear="2022" btimemonth="8" btimeday="16" btimehour="15" btimemin="4" btimesec="27" DevId="40" type="0" channel="0" devname="192.168.1.10" username="admin" info="连接失败 无法找到该设备"/>
+		<LOG id="4" btimeyear="2022" btimemonth="8" btimeday="16" btimehour="15" btimemin="4" btimesec="35" DevId="40" type="0" channel="0" devname="192.168.1.10" username="admin" info="连接失败 无法找到该设备"/>
+		<LOG id="5" btimeyear="2022" btimemonth="8" btimeday="16" btimehour="15" btimemin="4" btimesec="44" DevId="40" type="0" channel="0" devname="192.168.1.10" username="admin" info="连接失败 无法找到该设备"/>
+		<LOG id="6" btimeyear="2022" btimemonth="8" btimeday="16" btimehour="15" btimemin="4" btimesec="49" DevId="44" type="0" channel="0" devname="192.168.1.100" username="admin" info="连接成功 "/>
+		<LOG id="7" btimeyear="2022" btimemonth="8" btimeday="16" btimehour="15" btimemin="4" btimesec="52" DevId="44" type="0" channel="0" devname="192.168.1.100" username="admin" info="通道 1 打开成功"/>
+		<LOG id="8" btimeyear="2022" btimemonth="8" btimeday="16" btimehour="15" btimemin="34" btimesec="11" DevId="0" type="8" channel="0" devname="" username="super" info="关闭CMS"/>
+	</LOGINFO>
+	<GLOBAL index="9"/>
+</DATAROOT>

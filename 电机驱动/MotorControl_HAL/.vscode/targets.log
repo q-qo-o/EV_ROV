@@ -1,0 +1,566 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1_st_20200221-0903_longpath
+# Built for x86_64-w64-mingw32
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Sat Aug 13 06:39:29 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# automatic
+?F = $(notdir $?)
+# environment
+CUDA_PATH_V11_6 = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 141)
+LDSCRIPT = STM32F103C8Tx_FLASH.ld
+# makefile
+MAKEFLAGS = pqrR
+# makefile (from 'Makefile', line 16)
+TARGET = MotorControl
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# makefile (from 'Makefile', line 103)
+AS_DEFS = 
+# makefile (from 'Makefile', line 112)
+AS_INCLUDES = 
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile
+CURDIR := e:/Workspace/projects/作业对抗/电机驱动/MotorControl_HAL
+# default
+SHELL := C:/Users/qdsyq/.eide/bin/builder/msys/bin/sh.exe
+# makefile (from 'Makefile', line 84)
+BIN = $(CP) -O binary -S
+# environment
+WINDIR = C:\WINDOWS
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"08bdb29c43b4c03defdaaecc51ad48b6.zh-cn","_translationsConfigFile":"C:\\Users\\qdsyq\\AppData\\Roaming\\Code\\clp\\08bdb29c43b4c03defdaaecc51ad48b6.zh-cn\\tcf.json","_cacheRoot":"C:\\Users\\qdsyq\\AppData\\Roaming\\Code\\clp\\08bdb29c43b4c03defdaaecc51ad48b6.zh-cn","_resolvedLanguagePackCoreLocation":"C:\\Users\\qdsyq\\AppData\\Roaming\\Code\\clp\\08bdb29c43b4c03defdaaecc51ad48b6.zh-cn\\6d9b74a70ca9c7733b29f0456fd8195364076dda","_corruptedFile":"C:\\Users\\qdsyq\\AppData\\Roaming\\Code\\clp\\08bdb29c43b4c03defdaaecc51ad48b6.zh-cn\\corrupted.info","_languagePackSupport":true}
+# makefile (from 'Makefile', line 81)
+SZ = $(PREFIX)size
+# environment
+PYCHARM COMMUNITY EDITION = E:\Tools\pycharm\PyCharm Community Edition 2021.3.2\bin;
+# makefile (from 'Makefile', line 134)
+CFLAGS = $(MCU) $(C_DEFS) $(C_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections -g -gdwarf-2 -MMD -MP -MF"$(@:%.o=%.d)"
+# environment
+ONEDRIVE = C:\Users\qdsyq\OneDrive
+# environment
+PUBLIC = C:\Users\Public
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# makefile (from 'Makefile', line 80)
+CP = $(PREFIX)objcopy
+# makefile (from 'Makefile', line 23)
+DEBUG = 1
+# environment
+TMP = C:\Users\qdsyq\AppData\Local\Temp
+# makefile (from 'Makefile', line 79)
+AS = $(PREFIX)gcc -x assembler-with-cpp
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_CWD = E:\Workspace\projects\��ҵ�Կ�\�������\MotorControl_HAL
+# default
+MAKE_HOST := x86_64-w64-mingw32
+# environment
+PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\libnvvp;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;E:\Tools\gcc\mingw64\bin;C:\ProgramData\chocolatey\bin;E:\Tools\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_40\bin\bin;C:\Program Files\Java\jdk1.8.0_40\bin\jre\bin;E:\Tools\WinSCP\;C:\Program Files\dotnet\;E:\Program Files\opencv\build\x64\vc15\bin;E:\Program Files\OpenCvSharp-4.5.3-20211228\NativeLib\win\x64;E:\Program Files\OpenCvSharp-4.5.3-20211228\DebuggerVisualizers;E:\Program Files\ctags-p5.9.20220522.0-x64;E:\Tools\matlab\runtime\win64;E:\Tools\matlab\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.1.0\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\libvvp;C:\Users\qdsyq\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\qdsyq\AppData\Local\Programs\Python\Python37\;E:\Tools\Anaconda;E:\Tools\Anaconda\Library\mingw-w64\bin;E:\Tools\Anaconda\Library\usr\bin;E:\Tools\Anaconda\Library\bin;E:\Tools\Anaconda\Scripts;C:\Users\qdsyq\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\qdsyq\AppData\Local\Programs\Python\Python38\;E:\APP\Bandizip\;C:\Users\qdsyq\AppData\Local\Microsoft\WindowsApps;E:\Tools\VScode\Microsoft VS Code\bin;E:\Tools\pycham\PyCharm 2021.3.1\bin;;E:\Tools\pycharm\PyCharm Community Edition 2021.3.2\bin;;C:\Users\qdsyq\AppData\Local\Microsoft\WindowsApps;C:\Users\qdsyq\.dotnet\tools;C:\Users\qdsyq\.eide\bin\builder\bin;C:\Users\qdsyq\.eide\bin\builder\utils;C:\Users\qdsyq\.eide\bin\scripts;C:\Users\qdsyq\.eide\tools\gcc_arm\bin;C:\Users\qdsyq\.eide\tools\jlink;C:\Users\qdsyq\.eide\bin\builder\msys\bin
+# environment
+SW_SIM_HYDRA = C:\Program Files\Common Files\SolidWorks Shared\Simulation Worker Agent\
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+ZES_ENABLE_SYSMAN = 1
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132891916324849351
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+USERPROFILE = C:\Users\qdsyq
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+EIDE_TOOL_JLINK = C:\Users\qdsyq\.eide\tools\jlink
+# environment
+EIDE_BINARIES_VER = 8.3.2
+# environment
+NUMBER_OF_PROCESSORS = 16
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from 'Makefile', line 146)
+LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync
+# environment
+NVTOOLSEXT_PATH = C:\Program Files\NVIDIA Corporation\NvToolsExt\
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_24868_JIVICWDBGRPLDPLB
+# environment
+SW_SIM_MPIT = INTELMPI
+# makefile (from 'Makefile', line 62)
+ASM_SOURCES = startup_stm32f103xb.s
+# makefile (from 'Makefile', line 25)
+OPT = -Og
+# environment
+OPENCV_VIDEOIO_PRIORITY_MSMF = 0
+# environment
+COMPUTERNAME = ABC
+# environment
+PROGRAMFILES = C:\Program Files
+# default
+.LOADED := 
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = qdsyq
+# environment
+KMP_DUPLICATE_LIB_OK = TRUE
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\qdsyq\AppData\Roaming\Code\CachedData\6d9b74a70ca9c7733b29f0456fd8195364076dda
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# environment
+LOGONSERVER = \\ABC
+# makefile (from 'Makefile', line 69)
+PREFIX = arm-none-eabi-
+# environment
+ONEDRIVECONSUMER = C:\Users\qdsyq\OneDrive
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = ABC
+# makefile (from 'Makefile', line 106)
+C_DEFS = -DUSE_HAL_DRIVER -DSTM32F103xB
+# environment
+MAKELEVEL := 0
+# makefile (from 'Makefile', line 99)
+MCU = $(CPU) -mthumb $(FPU) $(FLOAT-ABI)
+# makefile (from 'Makefile', line 115)
+C_INCLUDES = -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from 'Makefile', line 83)
+HEX = $(CP) -O ihex
+# makefile (from 'Makefile', line 78)
+CC = $(PREFIX)gcc
+# environment
+JAVA_HOME = C:\Program Files\Java\jdk1.8.0_40\bin
+# makefile (from 'Makefile', line 32)
+BUILD_DIR = build
+# makefile (from 'Makefile', line 124)
+ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
+# default
+MAKE_VERSION := 4.2.1_st_20200221-0903_longpath
+# makefile
+.DEFAULT_GOAL := all
+# environment
+CLASSPATH = .;C:\Program Files\Java\jdk1.8.0_40\lib\dt.jar;C:\Program Files\Java\jdk1.8.0_40\lib\tools.jar;
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+EIDE_MSYS = C:\Users\qdsyq\.eide\bin\builder\msys\bin
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+ROS = C:\opt\ros\noetic\x64\bin
+# makefile (from 'Makefile', line 90)
+CPU = -mcpu=cortex-m3
+# environment
+LOCALAPPDATA = C:\Users\qdsyq\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\PowerShell\Modules\
+# default
+MAKE_COMMAND := make.exe
+# makefile (from 'Makefile', line 145)
+LIBDIR = 
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\aa1e246beeed39f8f3469693f296a568-1.70.1-main-sock
+# environment
+HOMEPATH = \Users\qdsyq
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# environment
+EIDE_TOOL_GCC_ARM = C:\Users\qdsyq\.eide\tools\gcc_arm\bin
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\qdsyq\AppData\Roaming
+# environment
+TEMP = C:\Users\qdsyq\AppData\Local\Temp
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+MKL_SERIAL = YES
+# environment
+LC_ALL = C
+# environment
+SW_SIM_TEMP = C:\ProgramData\SOLIDWORKS\SW_net_sim_temp\
+# makefile (from 'Makefile', line 144)
+LIBS = -lc -lm -lnosys 
+# automatic
+^F = $(notdir $^)
+# environment
+CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
+# makefile (from 'Makefile', line 38)
+C_SOURCES = Core/Src/main.c Core/Src/gpio.c Core/Src/tim.c Core/Src/usart.c Core/Src/stm32f1xx_it.c Core/Src/stm32f1xx_hal_msp.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c Core/Src/system_stm32f1xx.c
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = a502
+# environment
+PYCHARM = E:\Tools\pycham\PyCharm 2021.3.1\bin;
+# environment
+ADSK_CLM_WPAD_PROXY_CHECK = FALSE
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 159)
+OBJECTS = $(addprefix $(BUILD_DIR)/,$(notdir $(C_SOURCES:.c=.o))) $(addprefix $(BUILD_DIR)/,$(notdir $(ASM_SOURCES:.s=.o)))
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 24868
+# environment
+DOTNET_CLI_TELEMETRY_OPTOUT = 1
+# environment
+USERDOMAIN_ROAMINGPROFILE = ABC
+# variable set hash-table stats:
+# Load=137/1024=13%, Rehash=0, Collisions=22/207=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (key e:/Workspace/projects/��ҵ�Կ�/�������/MotorControl_HAL, mtime 1660335606): 17 files, no impossibilities.
+# build (key e:/Workspace/projects/��ҵ�Կ�/�������/MotorControl_HAL/build, mtime 1660335329): 3 files, no impossibilities.
+# Core/Src (key e:/Workspace/projects/��ҵ�Կ�/�������/MotorControl_HAL/Core/Src, mtime 1660335568): 4 files, no impossibilities so far.
+# Drivers/STM32F1xx_HAL_Driver/Src (key e:/Workspace/projects/��ҵ�Կ�/�������/MotorControl_HAL/Drivers/STM32F1xx_HAL_Driver/Src, mtime 1660335569): No files, no impossibilities so far.
+
+# 24 files, no impossibilities in 4 directories.
+
+# Implicit Rules
+
+build/%.o: %.c Makefile | build
+#  recipe to execute (from 'Makefile', line 163):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+
+build/%.o: %.s Makefile | build
+#  recipe to execute (from 'Makefile', line 166):
+	$(AS) -c $(CFLAGS) $< -o $@
+
+build/%.hex: build/%.elf | build
+#  recipe to execute (from 'Makefile', line 173):
+	$(HEX) $< $@
+	
+
+build/%.bin: build/%.elf | build
+#  recipe to execute (from 'Makefile', line 176):
+	$(BIN) $< $@	
+	
+
+# 4 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+build/stm32f1xx_hal_msp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/main.o: Core/Src/main.c Makefile | build
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := build/main.o
+# automatic
+# % := 
+# automatic
+# * := main
+# automatic
+# + := Core/Src/main.c Makefile
+# automatic
+# | := build
+# automatic
+# < := Core/Src/main.c
+# automatic
+# ^ := Core/Src/main.c Makefile
+# automatic
+# ? := Core/Src/main.c Makefile
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/26=4%
+#  recipe to execute (from 'Makefile', line 163):
+	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
+
+# Not a target:
+build/stm32f1xx_hal_gpio.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/tim.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32f1xx_hal.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: build/MotorControl.elf build/MotorControl.hex build/MotorControl.bin
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/14=0%
+
+# Not a target:
+build/usart.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32f1xx_hal_rcc.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32f1xx_hal_exti.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/startup_stm32f103xb.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-13 04:19:31
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32f1xx_it.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32f1xx_hal_gpio_ex.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/gpio.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build:
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-13 04:15:29
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 179):
+	mkdir $@		
+
+# Not a target:
+build/stm32f1xx_hal_rcc_ex.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32f1xx_hal_uart.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32f1xx_hal_tim.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/MotorControl.hex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32f1xx_hal_pwr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/system_stm32f1xx.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Core/Src/main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-13 05:33:08
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/stm32f1xx_hal_flash.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/MotorControl.elf: build/main.o build/gpio.o build/tim.o build/usart.o build/stm32f1xx_it.o build/stm32f1xx_hal_msp.o build/stm32f1xx_hal_gpio_ex.o build/stm32f1xx_hal_tim.o build/stm32f1xx_hal_tim_ex.o build/stm32f1xx_hal.o build/stm32f1xx_hal_rcc.o build/stm32f1xx_hal_rcc_ex.o build/stm32f1xx_hal_gpio.o build/stm32f1xx_hal_dma.o build/stm32f1xx_hal_cortex.o build/stm32f1xx_hal_pwr.o build/stm32f1xx_hal_flash.o build/stm32f1xx_hal_flash_ex.o build/stm32f1xx_hal_exti.o build/stm32f1xx_hal_uart.o build/system_stm32f1xx.o build/startup_stm32f103xb.o Makefile
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/14=0%
+#  recipe to execute (from 'Makefile', line 169):
+	$(CC) $(OBJECTS) $(LDFLAGS) -o $@
+	$(SZ) $@
+
+# Not a target:
+build/stm32f1xx_hal_dma.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/MotorControl.bin:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32f1xx_hal_tim_ex.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/stm32f1xx_hal_cortex.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 185):
+	-rm -fR $(BUILD_DIR)
+
+# Not a target:
+build/stm32f1xx_hal_flash_ex.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=32/1024=3%, Rehash=0, Collisions=5/83=6%
+# VPATH Search Paths
+
+vpath %.c Core/Src;Drivers/STM32F1xx_HAL_Driver/Src
+
+# 1 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 59 / storage = 955 B / avg = 16 B
+# current buf: size = 8162 B / used = 955 B / count = 59 / avg = 16 B
+
+# strcache performance: lookups = 93 / hit rate = 36%
+# hash-table stats:
+# Load=59/8192=1%, Rehash=0, Collisions=3/93=3%
+# Finished Make data base on Sat Aug 13 06:39:29 2022
+
+ 

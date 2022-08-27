@@ -1,0 +1,37 @@
+Added Component: Designator=P1(48V)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P2(双层RJ45)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P3(Rj45)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P6(风扇接口)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=48V Pin=P1-1
+Added Pin To Net: NetName=GND_D Pin=P1-2
+Added Pin To Net: NetName=TPTX2+ Pin=P2-1
+Added Pin To Net: NetName=TPTX2- Pin=P2-2
+Added Pin To Net: NetName=TPRX2+ Pin=P2-3
+Added Pin To Net: NetName=TPRX2- Pin=P2-6
+Added Pin To Net: NetName=GND Pin=P2-8
+Added Pin To Net: NetName=GND Pin=P2-13
+Added Pin To Net: NetName=GND Pin=P2-14
+Added Pin To Net: NetName=TPTX3+ Pin=P2-15
+Added Pin To Net: NetName=TPTX3- Pin=P2-16
+Added Pin To Net: NetName=TPRX3+ Pin=P2-17
+Added Pin To Net: NetName=TPRX3- Pin=P2-20
+Added Pin To Net: NetName=GND Pin=P2-22
+Added Pin To Net: NetName=GND Pin=P2-27
+Added Pin To Net: NetName=GND Pin=P2-28
+Added Pin To Net: NetName=TPTX0+ Pin=P3-1
+Added Pin To Net: NetName=TPTX0- Pin=P3-2
+Added Pin To Net: NetName=TPRX0+ Pin=P3-3
+Added Pin To Net: NetName=TPRX0- Pin=P3-6
+Added Pin To Net: NetName=GND Pin=P3-8
+Added Pin To Net: NetName=GND Pin=P3-13
+Added Pin To Net: NetName=GND Pin=P3-14
+Added Pin To Net: NetName=12V Pin=P6-1
+Added Pin To Net: NetName=GND Pin=P6-2
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component P1 48V
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component P2 双层RJ45
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component P3 RJ45
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component P6 风扇

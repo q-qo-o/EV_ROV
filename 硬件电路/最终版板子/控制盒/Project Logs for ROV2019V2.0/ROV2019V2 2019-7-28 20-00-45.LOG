@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=NetD12_2 Pin=D12-2
+Added Pin To Net: NetName=N Pin=D12-3
+Change Net Name : Old Net Name=NetD12_2 New Net Name=220V_VCC
+Change Net Name : Old Net Name=NetD12_3 New Net Name=220V_GND

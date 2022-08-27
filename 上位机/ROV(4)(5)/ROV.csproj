@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{AC4C324C-C8AE-46A3-BBE4-C184C5CA3A7E}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <LangVersion>8.0</LangVersion>
+    <AssemblyName>ROV</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SmileWei.EmbeddedApp">
+      <HintPath>E:\Workspace\projects\作业对抗\rov\rov_0\SmileWei.EmbeddedApp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationConfig Include="ROV.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationIcon Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ROV.AvionicsInstrumentsControls\AvionicsInstrumentsControlsRessources.cs" />
+    <Compile Include="ROV.Properties\Resources.cs" />
+    <Compile Include="ROV.Properties\Settings.cs" />
+    <Compile Include="ROV\AirSpeedIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\AltimeterInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\AttitudeIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\Constant.cs" />
+    <Compile Include="ROV\frm_DebugMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROV\frm_MainRov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ROV\HeadingIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\InstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\InstrumentControlMarkPoint.cs" />
+    <Compile Include="ROV\InstrumentControlMarksDefinition.cs" />
+    <Compile Include="ROV\InstumentMarkScaleStyle.cs" />
+    <Compile Include="ROV\JosystickSend.cs" />
+    <Compile Include="ROV\Joystick.cs" />
+    <Compile Include="ROV\JoystickAPI.cs" />
+    <Compile Include="ROV\JoystickButtons.cs" />
+    <Compile Include="ROV\JoystickEventArgs.cs" />
+    <Compile Include="ROV\JoystickHandle.cs" />
+    <Compile Include="ROV\Program.cs" />
+    <Compile Include="ROV\SendPidParameterInfo.cs" />
+    <Compile Include="ROV\TurnCoordinatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\VerticalProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ROV\VerticalSpeedIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ROV.AvionicsInstrumentsControls.AvionicsInstrumentsControlsRessources.resx" />
+    <EmbeddedResource Include="ROV.frm_DebugMode.resx" />
+    <EmbeddedResource Include="ROV\frm_MainRov.resx">
+      <DependentUpon>frm_MainRov.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

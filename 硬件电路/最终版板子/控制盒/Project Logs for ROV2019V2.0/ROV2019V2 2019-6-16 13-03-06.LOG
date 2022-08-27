@@ -1,0 +1,50 @@
+Removed Member From Class: ClassName=ROV2019V2.0 Member=C?
+Change Component Designator: OldDesignator=C1 NewDesignator=C2
+Change Component Designator: OldDesignator=C2 NewDesignator=C3
+Change Component Designator: OldDesignator=C3 NewDesignator=C4
+Change Component Designator: OldDesignator=C4 NewDesignator=C5
+Change Component Designator: OldDesignator=C5 NewDesignator=C6
+Change Component Designator: OldDesignator=C6 NewDesignator=C7
+Change Component Designator: OldDesignator=C7 NewDesignator=C8
+Change Component Designator: OldDesignator=C8 NewDesignator=C9
+Change Component Designator: OldDesignator=C9 NewDesignator=C10
+Change Component Designator: OldDesignator=C? NewDesignator=C1
+Change Component Designator: OldDesignator=R5 NewDesignator=R2
+Added Component: Designator=R3(0603_R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "供应商链接"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.szlcsc.com/product/details_21904.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Notepad"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SuppliersPartNumber"; Value = "C21190"; VariantName = "[No Variations]"
+Added Component: Designator=R4(0603_R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "供应商链接"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.szlcsc.com/product/details_21904.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Notepad"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SuppliersPartNumber"; Value = "C21190"; VariantName = "[No Variations]"
+Added Component: Designator=R5(0603_R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "供应商链接"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.szlcsc.com/product/details_21904.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Notepad"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SuppliersPartNumber"; Value = "C21190"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=R3-1
+Added Pin To Net: NetName=NetP5_3 Pin=R3-2
+Added Pin To Net: NetName=5V Pin=R4-1
+Added Pin To Net: NetName=NetP5_2 Pin=R4-2
+Added Pin To Net: NetName=5V Pin=R5-1
+Added Pin To Net: NetName=NetP5_1 Pin=R5-2
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component C10 10uF (106) 10% 50V
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component R3 1KΩ (1001) ±1%
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component R4 1KΩ (1001) ±1%
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component R5 1KΩ (1001) ±1%
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component W1 H1102NL
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component W2 H1102NL
+Added Member To Class: ClassName=ROV2019V2.0 Member=Component W3 H1102NL
+Added Room: Name=ROV2019V2.0
