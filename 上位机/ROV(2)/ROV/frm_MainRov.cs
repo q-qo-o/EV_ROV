@@ -491,7 +491,7 @@ namespace ROV
 			{
 				while (true)
 				{
-					bool flag = true;
+					//bool flag = true;
 					byte[] msgArr = new byte[4096];
 					if (msgArr[0] != 0)
 					{
